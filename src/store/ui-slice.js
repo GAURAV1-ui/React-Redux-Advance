@@ -5,11 +5,11 @@ createSlice({
     initialState: { cartIsVisible: false },
     reducers: {
         toggle(state) {
-            state.cartIsVisible = !cartIsVisible
+            state.cartIsVisible = !state.cartIsVisible
         }
     }
 });
 
-export const uiuActions = uiSlice.actions;
+export const uiActions = uiSlice.actions;
 
 export default uiSlice;
