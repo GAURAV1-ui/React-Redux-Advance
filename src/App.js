@@ -17,6 +17,7 @@ function App() {
       body: JSON.stringify(cart),
     });
   },[cart]);
+  
   return (
     <Layout>
       {showCart && <Cart />}
